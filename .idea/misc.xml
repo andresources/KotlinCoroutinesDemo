@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a00.xml" value="0.15760869565217392" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a003.xml" value="0.14945652173913043" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a007.xml" value="0.16145833333333334" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a01.xml" value="0.15760869565217392" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a02.xml" value="0.15760869565217392" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a04.xml" value="0.1408514492753623" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a05.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a06.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a08.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a09.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a100_coroutine_fragment_communitcation.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a1_launch_asyc.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a2_scopes.xml" value="0.16530797101449277" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_a99_fragment_communication.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_launch_activities.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_launch_mode_activity.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_launch_mode_c.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_launch_mode_d.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_lunch_mode_b.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_main.xml" value="0.16145833333333334" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/activity_second.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/fragment_a100_.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/fragment_a99_1.xml" value="0.17552083333333332" />
+        <entry key="..\:/Learning/KotlinCoroutinesDemo/app/src/main/res/layout/fragment_a99_2.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

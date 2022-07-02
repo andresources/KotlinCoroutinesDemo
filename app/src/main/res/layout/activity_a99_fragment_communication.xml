@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".A99_Activity_FragmentCommunication">
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView1"
+        android:layout_weight="1"
+        android:name="com.kotlincoroutinesdemo.A99_Fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:layout_weight="1"
+        android:name="com.kotlincoroutinesdemo.A99_Fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

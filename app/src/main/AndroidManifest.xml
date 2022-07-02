@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kotlincoroutinesdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KotlinCoroutinesDemo">
+        <activity
+            android:name="com.launchmodes.LaunchMode_ActivityD"
+            android:exported="false" />
+        <activity
+            android:name="com.launchmodes.LaunchMode_ActivityB"
+            android:launchMode="singleInstance"
+            android:exported="false" />
+        <activity
+            android:name="com.launchmodes.LaunchMode_ActivityC"
+            android:exported="false" />
+        <activity
+            android:name=".A11_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".A01_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".A2_ScopesActivity"
+            android:exported="false" />
+        <!--
+        <activity
+            android:name=".A1_LaunchAsycActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" /> <!-- A00_Activity -->
+        <!-- A00_Activity -->
+        <!-- A02_Activity -->
+        <!-- A03_Activity -->
+        <!-- A04_Activity -->
+        <!-- A05_Activity -->
+        <!-- A06_Activity -->
+        <!-- A007_Activity -->
+        <!-- A08_Activity -->
+        <!-- A09_Activity -->
+        <!-- A10_Activity_TimeOut -->
+        <!-- A99_Activity_FragmentCommunication -->
+        <!--A100_Activity_Coroutine_FragmentCommunitcation-->
+        <activity
+            android:name="com.launchmodes.LaunchMode_ActivityA"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="50dp"
+    tools:context=".A05_Activity">
+
+    <Button
+        android:id="@+id/btnNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network On Main Thread"
+         />
+
+    <Button
+        android:id="@+id/btnNetworkUsingThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network On Thread"
+         />
+
+    <Button
+        android:id="@+id/btnNetworkCoroutine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Using Coroutine"
+        />
+
+    <Button
+        android:id="@+id/btnWithContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WithContext"
+        />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+      />
+
+</LinearLayout>

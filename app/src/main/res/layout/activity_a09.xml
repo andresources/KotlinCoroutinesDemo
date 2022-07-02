@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".A09_Activity">
+
+    <Button
+        android:id="@+id/btnLaunchCorNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Coroutine Normal" />
+    <Button
+        android:id="@+id/btnLaunchCorGlobalScope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Coroutine With Global Scope" />
+    <Button
+        android:id="@+id/btnLaunchCorLifeCycleScope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Coroutine With Life Cycle Scope" />
+    <Button
+        android:id="@+id/btnLaunchCorViewModelScope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Coroutine With ViewModel Scope" />
+    <Button
+        android:id="@+id/btnStartNewActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start New Activity" />
+    <Button
+        android:id="@+id/btnCheckGloalScopeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check GloalScope Status" />
+</LinearLayout>
