@@ -8,6 +8,7 @@ import com.kotlincoroutinesdemo.R
 import kotlinx.android.synthetic.main.activity_launch_mode_activity.*
 
 class LaunchMode_ActivityA : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_launch_mode_activity)
