@@ -8,7 +8,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class A00_Activity : AppCompatActivity() {
-    lateinit var btnCheckMainThread:Button
+    private lateinit var btnCheckMainThread:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_a00)
