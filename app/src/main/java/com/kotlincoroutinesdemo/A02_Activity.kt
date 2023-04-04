@@ -16,16 +16,17 @@ class A02_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_a02)
         btnStart.setOnClickListener(View.OnClickListener {
-            GlobalScope.launch(Dispatchers.Main) {
+            GlobalScope.launch(Dispatchers.Main) {//This code is running on main-ui thread
                 val time=measureTimeMillis {
+                    //May not Crash, and switch button works
                     fun1()
                     fun2()
                 }
                 Log.i("Coroutine","Completion Time : ${time}")
             }
         })
-
-        btnNoCo.setOnClickListener(View.OnClickListener {
+        btnNoCo.setOnClickListener(View.OnClickListener {//This code is running on main-ui thread
+            //May Crash, and switch button won't work
             fun3()
             fun4()
         })
@@ -34,7 +35,7 @@ class A02_Activity : AppCompatActivity() {
     suspend fun fun1(){
         for ( i in 1..10){
             Log.i("Coroutine","fun1 : ${i}")
-            Thread.sleep(1000)
+            delay(500)
         }
         Log.i("Coroutine","fun1 - Thread : "+Thread.currentThread().name)
     }

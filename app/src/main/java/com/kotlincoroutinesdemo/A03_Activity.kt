@@ -64,5 +64,4 @@ class A03_Activity : AppCompatActivity() {
         }
         Log.i("Coroutine","ThreadFun2 - Thread : "+Thread.currentThread().name)
     }
-
 }
