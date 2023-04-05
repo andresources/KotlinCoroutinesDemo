@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.UiState
 import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
 
@@ -22,7 +23,7 @@ class MyViewModel : ViewModel() {
                 val timeTaken = measureTimeMillis {
                     combinedResult = resultOneDeferred.await() + resultTwoDeferred.await()
                 }
-                uiState.postValue(UiState.Success("Task Completed : $combinedResult and time taken : $timeTaken"))
+                uiState.postValue(UiState.Success("Task Completed : $combinedResult and time taken : $timeTaken",""))
             } catch (e: Exception) {
                 uiState.postValue(UiState.Error("Something Went Wrong"))
             }

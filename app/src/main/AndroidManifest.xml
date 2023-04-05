@@ -51,13 +51,22 @@
         <!-- A10_Activity_TimeOut -->
         <!-- A99_Activity_FragmentCommunication -->
         <!-- A100_Activity_Coroutine_FragmentCommunitcation -->
-        <!--CoroutineRunParallelTasksActivity-->
+
+        <!-- CoroutineRunParallelTasksActivity -->
+        <!--SingleNetworkCallActivity-->
+        <!--SeriesNetworkCallsViewModel-->
+        <!--ParallelNetworkCallsViewModel-->
+
+        <!--TryCatchActivity-->
+        <!--ExceptionHandlerActivity-->
+        <!--IgnoreErrorAndContinueActivity-->
+
+        <!--RoomDBActivity-->
         <activity
-            android:name="com.coroutinesrunpallel.CoroutineRunParallelTasksActivity"
+            android:name="com.roomcoroutine.RoomDBActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
