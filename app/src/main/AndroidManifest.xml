@@ -61,9 +61,12 @@
         <!--ExceptionHandlerActivity-->
         <!--IgnoreErrorAndContinueActivity-->
 
+        <!--TimeoutActivity-->
+
         <!--RoomDBActivity-->
+
         <activity
-            android:name="com.roomcoroutine.RoomDBActivity"
+            android:name="com.basics.BasicActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -34,22 +34,18 @@ class MyViewModel : ViewModel() {
         return uiState
     }
 
-    private suspend fun doLongRunningTaskOne(): Int {
-        return withContext(Dispatchers.Default) {
+    private suspend fun doLongRunningTaskOne()= withContext(Dispatchers.Default) {
             // your code for doing a long running task
             // Added delay to simulate
             delay(5000)
             return@withContext 10
-        }
     }
 
-    private suspend fun doLongRunningTaskTwo(): Int {
-        return withContext(Dispatchers.Default) {
-            // your code for doing a long running task
-            // Added delay to simulate
-            delay(2000)
-            return@withContext 10
-        }
+    private suspend fun doLongRunningTaskTwo() = withContext(Dispatchers.Default) {
+        // your code for doing a long running task
+        // Added delay to simulate
+        delay(2000)
+        return@withContext 10
     }
 
 }
