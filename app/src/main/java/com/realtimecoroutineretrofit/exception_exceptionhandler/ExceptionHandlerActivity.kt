@@ -52,6 +52,7 @@ class ExceptionHandlerActivity : AppCompatActivity() {
                         progressBar.visibility = View.GONE
                         Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
                     }
+                    else -> {}
                 }
             }
         }

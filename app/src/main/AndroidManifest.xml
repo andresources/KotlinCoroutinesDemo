@@ -51,25 +51,22 @@
         <!-- A10_Activity_TimeOut -->
         <!-- A99_Activity_FragmentCommunication -->
         <!-- A100_Activity_Coroutine_FragmentCommunitcation -->
-
         <!-- CoroutineRunParallelTasksActivity -->
-        <!--SingleNetworkCallActivity-->
-        <!--SeriesNetworkCallsViewModel-->
-        <!--ParallelNetworkCallsViewModel-->
-
-        <!--TryCatchActivity-->
-        <!--ExceptionHandlerActivity-->
-        <!--IgnoreErrorAndContinueActivity-->
-
-        <!--TimeoutActivity-->
-
-        <!--RoomDBActivity-->
-
+        <!-- SingleNetworkCallActivity -->
+        <!-- SeriesNetworkCallsViewModel -->
+        <!-- ParallelNetworkCallsViewModel -->
+        <!-- TryCatchActivity -->
+        <!-- ExceptionHandlerActivity -->
+        <!-- IgnoreErrorAndContinueActivity -->
+        <!-- TimeoutActivity -->
+        <!-- RoomDBActivity -->
+        <!-- ScopeActivity -->
         <activity
-            android:name="com.basics.BasicActivity"
+            android:name="com.basics.LunchDunActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
