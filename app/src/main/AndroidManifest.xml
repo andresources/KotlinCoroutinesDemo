@@ -62,7 +62,7 @@
         <!-- RoomDBActivity -->
         <!-- ScopeActivity -->
         <activity
-            android:name="com.basics.LunchDunActivity"
+            android:name="com.coroutinescope.ScopeCancellationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

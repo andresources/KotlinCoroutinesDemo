@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.lifecycle.lifecycleScope
 import kotlinx.android.synthetic.main.activity_a003.*
 import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
@@ -13,7 +14,7 @@ class A03_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_a003)
         btnCoroutine.setOnClickListener(View.OnClickListener {
-            GlobalScope.launch {
+            lifecycleScope.launch {
                 val time=measureTimeMillis {
                     var j1=async(Dispatchers.Main) {
                         coroutineFun1()

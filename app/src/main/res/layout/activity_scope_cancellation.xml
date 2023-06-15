@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.coroutinescope.ScopeCancellationActivity">
+
+    <Button
+        android:onClick="funCoroutineScopeStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CoroutineScope Start" />
+    <Button
+        android:onClick="funCoroutineScopeStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CoroutineScope Stop" />
+
+    <Button
+        android:onClick="funJob1Stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job1 Stop" />
+    <Button
+        android:onClick="funJob2Stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job2 Stop" />
+</LinearLayout>

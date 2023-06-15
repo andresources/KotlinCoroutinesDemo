@@ -307,6 +307,7 @@ class BasicActivity : AppCompatActivity() {
         lifecycleScope.launch(Dispatchers.Main) {
             Log.d(TAG, "Before Task 2")
             job.cancel()
+
             doLongRunningTask()
             Log.d(TAG, "After Task 2")
         }
@@ -435,7 +436,9 @@ class BasicActivity : AppCompatActivity() {
     private fun learnLaunchWithJob() {
         val job = lifecycleScope.launch(Dispatchers.Default) {
             // do something
+
         }
+
     }
 
     private suspend fun learnAsync() {
