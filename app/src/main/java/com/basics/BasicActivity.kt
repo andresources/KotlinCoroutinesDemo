@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.kotlincoroutinesdemo.R
 import kotlinx.coroutines.*
+import kotlin.system.measureTimeMillis
 
 class BasicActivity : AppCompatActivity() {
 
@@ -228,7 +229,7 @@ class BasicActivity : AppCompatActivity() {
         Log.d(TAG, "Function Start")
         lifecycleScope.launch {
             Log.d(TAG, "Before Task")
-            launch(Dispatchers.Default) {
+            var job = launch(Dispatchers.Default) {
                 Log.d(TAG, "Before Delay")
                 delay(2000)
                 Log.d(TAG, "After Delay")
@@ -276,18 +277,21 @@ class BasicActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             Log.d(TAG, "Before Task")
+            var result = 0
+            var timeTaken = measureTimeMillis {
+                val deferredOne = async {
+                    doLongRunningTaskOne()
+                }
 
-            val deferredOne = async {
-                doLongRunningTaskOne()
+                val deferredTwo = async {
+                    doLongRunningTaskTwo()
+                }
+                 result = deferredOne.await() + deferredTwo.await()
             }
 
-            val deferredTwo = async {
-                doLongRunningTaskTwo()
-            }
 
-            val result = deferredOne.await() + deferredTwo.await()
 
-            Log.d(TAG, "result : $result")
+            Log.d(TAG, "result : $result Time Taken : $timeTaken")
 
             Log.d(TAG, "After Task")
         }
@@ -320,6 +324,7 @@ class BasicActivity : AppCompatActivity() {
 
         lifecycleScope.launch(Dispatchers.Main) {
             Log.d(TAG, "Before Task")
+
             childTask(coroutineContext[Job]!!)
             Log.d(TAG, "After Task")
         }
@@ -366,7 +371,7 @@ class BasicActivity : AppCompatActivity() {
     }
 
     private val exceptionHandler = CoroutineExceptionHandler { _, e ->
-        Log.d(TAG, "exception handler: $e")
+        Log.d(TAG, "exception handler: ${e.message}")
     }
 
     private fun lifecycleScopeWithHandlerException() {

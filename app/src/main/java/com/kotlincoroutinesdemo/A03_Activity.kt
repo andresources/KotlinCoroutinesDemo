@@ -22,6 +22,8 @@ class A03_Activity : AppCompatActivity() {
                     var j2=async(Dispatchers.Main) {
                         coroutineFun2()
                     }
+                   /* val jList = listOf(j1,j2)
+                    jList.awaitAll()*/
                     j1.await()
                     j2.await()
                 }

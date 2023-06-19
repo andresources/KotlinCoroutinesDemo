@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.exceptions.CoroutineExceptionHandlernActivity">
+
+    <Button
+        android:onClick="funLaunchException"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch For Exception" />
+
+    <Button
+        android:onClick="funAsyncException"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Async For Exception" />
+
+    <Button
+        android:onClick="funLaunchCoroutineExceptionHandler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch with CoroutineExceptionHandler" />
+    <Button
+        android:onClick="funAsyncCoroutineExceptionHandler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asycn with CoroutineExceptionHandler" />
+</LinearLayout>

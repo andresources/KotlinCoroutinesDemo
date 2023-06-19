@@ -11,7 +11,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinCoroutinesDemo">
-
         <activity
             android:name="com.launchmodes.LaunchMode_ActivityD"
             android:exported="false" />
@@ -61,8 +60,12 @@
         <!-- TimeoutActivity -->
         <!-- RoomDBActivity -->
         <!-- ScopeActivity -->
+        <!-- ScopeCancellationActivity -->
+        <!-- CoroutineCompletionActivity -->
+        <!--CoroutineExceptionHandlernActivity-->
+
         <activity
-            android:name="com.coroutinescope.ScopeCancellationActivity"
+            android:name="com.supervisorjob.SupervisorJobLaunchActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
