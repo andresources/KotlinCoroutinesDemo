@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinCoroutinesDemo">
         <activity
+            android:name=".CancellationActivity"
+            android:exported="false" />
+        <activity
             android:name="com.launchmodes.LaunchMode_ActivityD"
             android:exported="false" />
         <activity
@@ -62,10 +65,11 @@
         <!-- ScopeActivity -->
         <!-- ScopeCancellationActivity -->
         <!-- CoroutineCompletionActivity -->
-        <!--CoroutineExceptionHandlernActivity-->
-
+        <!-- CoroutineExceptionHandlernActivity -->
+        <!--SupervisorJobLaunchActivity-->
+        <!--CancellationActivity-->
         <activity
-            android:name="com.supervisorjob.SupervisorJobLaunchActivity"
+            android:name="com.coroutinescope.CoroutineCompletionActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

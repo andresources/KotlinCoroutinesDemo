@@ -6,10 +6,8 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import com.kotlincoroutinesdemo.R
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
+import kotlin.coroutines.CoroutineContext
 
 class CoroutineCompletionActivity : AppCompatActivity() {
     private lateinit var tvJob1:TextView
@@ -38,7 +36,6 @@ class CoroutineCompletionActivity : AppCompatActivity() {
         pbJob1 = findViewById(R.id.pbJob1)
         pbJob2 = findViewById(R.id.pbJob2)
         pbJob3 = findViewById(R.id.pbJob3)
-
     }
 
     fun funLaunchAllCors(view: View) {
@@ -50,7 +47,7 @@ class CoroutineCompletionActivity : AppCompatActivity() {
                 while (fg){
                     i++
                     delay(1500L)
-                    tvJob1.setText("Job1 : $i")
+                    tvJob1.setText("Job1(Status-$isActive) : $i")
                     if (i==5) fg=false
                 }
             }
@@ -60,7 +57,7 @@ class CoroutineCompletionActivity : AppCompatActivity() {
                 while (fg){
                     i++
                     delay(2000L)
-                    tvJob2.setText("Job2 : $i")
+                    tvJob2.setText("Job2(Status-$isActive) : $i")
                     if (i==5) fg=false
                 }
             }
@@ -70,7 +67,7 @@ class CoroutineCompletionActivity : AppCompatActivity() {
                 while (fg){
                     i++
                     delay(3000L)
-                    tvJob3.setText("Job3 : $i")
+                    tvJob3.setText("Job3(Status-$isActive) : $i")
                     if (i==5) fg=false
                 }
             }
@@ -80,7 +77,7 @@ class CoroutineCompletionActivity : AppCompatActivity() {
                     tvJob1.setText("Job1 Cancelled")
                 }
                 if(!job1.isCancelled){
-                    tvJob1.setText("Job1 Completed")
+                    tvJob1.setText("Job1 Completed : ${job1.isActive}")
                 }
             }
 
@@ -90,7 +87,7 @@ class CoroutineCompletionActivity : AppCompatActivity() {
                     tvJob2.setText("Job2 Cancelled")
                 }
                 if(!job2.isCancelled){
-                    tvJob2.setText("Job2 Completed")
+                    tvJob2.setText("Job2 Completed: ${job2.isActive}")
                 }
             }
 
@@ -100,7 +97,7 @@ class CoroutineCompletionActivity : AppCompatActivity() {
                     tvJob3.setText("Job3 Cancelled")
                 }
                 if(!job3.isCancelled){
-                    tvJob3.setText("Job3 Completed")
+                    tvJob3.setText("Job3 Completed: : ${job3.isActive}")
                 }
             }
             parentJob.invokeOnCompletion {
